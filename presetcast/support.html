@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PresetCast Remote - Support</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #6e6e73; --line: #d2d2d7; --link: #0066cc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000000; --fg: #f5f5f7; --muted: #a1a1a6; --line: #424245; --link: #2997ff; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9em; line-height: 1.2; margin: 0.4em 0; }
+  h2 { font-size: 1.3em; margin-top: 2em; }
+  h3 { font-size: 1.05em; margin: 1.6em 0 0.3em; }
+  h3 + p { margin-top: 0; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  .muted, .lang { color: var(--muted); }
+  .lang { font-size: 0.9em; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3em 0; }
+  li { margin: 0.35em 0; }
+  .short { border-left: 3px solid var(--line); padding-left: 14px; }
+</style>
+</head>
+<body>
+<main>
+<p class="lang"><a href="#en">English</a> · <a href="#vi">Tiếng Việt</a></p>
+
+<section id="en" lang="en">
+<h1>PresetCast Remote - Support</h1>
+
+<p>PresetCast Remote controls Nikon Z-series cameras over Wi-Fi or a USB cable from your iPhone or iPad: live view, exposure settings, shooting, writing Picture Control presets into the camera's Custom slots, and developing each new photo on your device.</p>
+
+<p class="short"><strong>Contact:</strong> <a href="mailto:henry.embedded.dev@gmail.com">henry.embedded.dev@gmail.com</a> - we usually reply within 2 business days. Please include your iPhone/iPad model, iOS/iPadOS version, camera model and firmware version, and what you were doing when the problem happened (••• › Log › Copy all, then paste it in your e-mail, helps a lot).</p>
+
+<h2>Getting started</h2>
+<ol>
+  <li><strong>On the camera:</strong> Network menu › Connect to smart device › turn on Wi-Fi.</li>
+  <li><strong>On the iPhone/iPad:</strong> Settings › Wi-Fi › join the camera's network.</li>
+  <li><strong>In the app:</strong> pick the camera from the list (or type its IP address, usually 192.168.1.1) and tap Connect. Confirm the pairing on the camera the first time.</li>
+</ol>
+<p>No camera at hand? Tap <strong>"Try Demo mode"</strong> on the first screen.</p>
+
+<h2>FAQ</h2>
+
+<h3>The app can't find my camera.</h3>
+<p>Check Settings › PresetCast › Local Network is on, and that the iPhone is joined to the camera's Wi-Fi (not your home Wi-Fi). Then type the IP address manually.</p>
+
+<h3>Which cameras are supported?</h3>
+<p>Nikon Z cameras: Z9, Z8, Z7II, Z7, Z6III, Z6II, Z6, Zf, Zfc, Z5II, Z5IIc, Z5, Z50II, Z50, Z30 and ZR, over Wi-Fi or a USB cable. Tested on: Nikon Z5II (firmware 1.20). Some features differ by model (for example the newest Picture Controls exist only on recent bodies); please tell us how it goes, with the log from ••• (More) › Log.</p>
+
+<h3>How do I connect with a USB cable?</h3>
+<p>On the camera set Network menu › USB to <strong>MTP/PTP</strong> (not "iPhone", which is only for Nikon's own app), then plug the camera into the iPhone or iPad with a USB-C cable. The app connects by itself and asks once for permission to control the camera. While it is connected, the camera's dials and buttons may be locked; they come back when you disconnect or unplug.</p>
+
+<h3>What does "Develop new photos" do?</h3>
+<p>Turn it on in ••• (More). Each photo you take - with the app or the camera's own shutter - is downloaded (RAW when the camera records it), the on-device AI picks a preset, adds deep colour / skin smoothing as you chose, and shows it for review. Untouched, it is saved to Photos after a few seconds (with the RAW attached); touch the screen to choose another look first, or Discard.</p>
+
+<h3>It says the RAW file can't be decoded.</h3>
+<p>Some iOS versions only read the Z5II's <em>Lossless compressed</em> NEFs. Tap "Switch the camera to lossless RAW" in the review, or set Photo shooting menu › NEF (RAW) recording › Lossless compressed. Meanwhile the camera's JPEG is used.</p>
+
+<h3>Developed photos aren't saved.</h3>
+<p>Allow Settings › PresetCast › Photos › "Add Photos Only".</p>
+
+<h3>Colours on the phone differ from the camera.</h3>
+<p>Try ••• › Develop new photos › Calibrate camera colours (camera on a tripod; it takes one RAW + JPEG per Picture Control and puts your settings back afterwards).</p>
+
+<h3>Is writing a preset safe?</h3>
+<p>Writing replaces the chosen Custom slot. Use <strong>Backup</strong> first to save your current slots to the Files app.</p>
+
+<h3>Where are my backups, imported presets and photos?</h3>
+<p>Files app › On My iPhone (or iPad) › PresetCast.</p>
+
+<h3>How do I remove ads?</h3>
+<p>Subscribe to Pro (yearly). Pro removes all ads and unlocks the AI assistant and AI developing (the AI picks the preset, colour by AI when importing). Everything else, AI styles included, is available in the free version too (AI styles show an ad when turned on).</p>
+
+<h3>I bought Pro but still see ads / changed iPhone.</h3>
+<p>Open the Pro screen and tap <strong>Restore purchases</strong>, signed in with the same Apple ID.</p>
+
+<h3>How do I cancel Pro?</h3>
+<p>iOS Settings › [your name] › Subscriptions › PresetCast › Cancel Subscription. Refunds are handled by Apple: <a href="https://reportaproblem.apple.com">https://reportaproblem.apple.com</a></p>
+
+<h3>Privacy</h3>
+<p>See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+<p class="muted"><em>Nikon and Nikon Z are trademarks of Nikon Corporation. PresetCast Remote is an independent app and is not affiliated with, endorsed or sponsored by Nikon Corporation.</em></p>
+</section>
+
+<hr>
+
+<section id="vi" lang="vi">
+<h1>Hỗ trợ (Tiếng Việt)</h1>
+
+<p class="short"><strong>Liên hệ:</strong> <a href="mailto:henry.embedded.dev@gmail.com">henry.embedded.dev@gmail.com</a> - phản hồi trong khoảng 2 ngày làm việc. Vui lòng gửi kèm đời iPhone, phiên bản iOS, đời máy ảnh + firmware và mô tả lỗi.</p>
+
+<ul>
+  <li><strong>Kết nối:</strong> trên máy ảnh bật Menu Mạng › Kết nối với thiết bị thông minh › Wi-Fi; trên iPhone/iPad vào Cài đặt › Wi-Fi chọn mạng của máy ảnh; mở app, chọn máy ảnh hoặc nhập IP (thường 192.168.1.1) rồi bấm Kết nối.</li>
+  <li><strong>Máy ảnh tương thích:</strong> Nikon Z: Z9, Z8, Z7II, Z7, Z6III, Z6II, Z6, Zf, Zfc, Z5II, Z5IIc, Z5, Z50II, Z50, Z30 và ZR, qua Wi-Fi hoặc cáp USB; đã thử với Nikon Z5II (firmware 1.20). Một số tính năng khác nhau theo dòng máy.</li>
+  <li><strong>Kết nối bằng cáp USB:</strong> trên máy ảnh đặt Menu Mạng › USB thành <strong>MTP/PTP</strong> (không chọn "iPhone"), rồi cắm cáp USB-C vào iPhone/iPad; app tự kết nối và hỏi quyền điều khiển máy ảnh một lần. Khi đang kết nối, các nút trên máy có thể bị khoá; rút cáp hoặc ngắt kết nối là dùng lại được.</li>
+  <li><strong>Tự xử lý ảnh vừa chụp:</strong> bật trong ••• (Thêm); ảnh được tải về, AI chọn preset, xem lại rồi tự lưu vào Ảnh kèm RAW. Nếu báo không đọc được RAW, hãy đặt NEF (RAW) là <em>Lossless compressed</em>. Nếu không lưu được ảnh: Cài đặt › PresetCast › Ảnh › "Chỉ thêm ảnh".</li>
+  <li><strong>Không tìm thấy máy ảnh:</strong> bật Cài đặt › PresetCast › Mạng cục bộ.</li>
+  <li><strong>Ghi preset:</strong> sẽ ghi đè slot Custom đã chọn - hãy Sao lưu trước.</li>
+  <li><strong>Bỏ quảng cáo:</strong> đăng ký Pro (theo năm). Đổi máy/mất Pro: bấm "Khôi phục giao dịch".</li>
+  <li><strong>Huỷ Pro:</strong> Cài đặt › [tên bạn] › Đăng ký › PresetCast › Huỷ.</li>
+  <li><strong>Quyền riêng tư:</strong> xem <a href="privacy.html#vi">Chính sách quyền riêng tư</a>.</li>
+</ul>
+
+<p class="muted"><em>Nikon và Nikon Z là nhãn hiệu của Nikon Corporation. PresetCast Remote là ứng dụng độc lập, không liên kết, không được Nikon Corporation bảo trợ hay xác nhận.</em></p>
+</section>
+</main>
+</body>
+</html>
