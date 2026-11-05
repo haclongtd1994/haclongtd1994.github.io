@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AVF Studio - TikTok sign-in</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #6e6e73; --line: #d2d2d7; --link: #0066cc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000000; --fg: #f5f5f7; --muted: #a1a1a6; --line: #424245; --link: #2997ff; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9em; line-height: 1.2; margin: 0.4em 0; }
+  h2 { font-size: 1.3em; margin-top: 2em; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  .muted, .lang { color: var(--muted); }
+  .lang { font-size: 0.9em; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3em 0; }
+  li { margin: 0.35em 0; }
+  .short { border-left: 3px solid var(--line); padding-left: 14px; }
+  code, .code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; overflow-wrap: anywhere; }
+  .code { display: block; padding: 12px; border: 1px solid var(--line); border-radius: 8px; margin: 0.6em 0; }
+  button { font: inherit; padding: 8px 16px; border-radius: 8px; border: 1px solid var(--line);
+           background: var(--bg); color: var(--fg); cursor: pointer; }
+</style>
+</head>
+<body>
+<main>
+<h1>TikTok sign-in</h1>
+<p id="msg" class="muted">Reading the sign-in result…</p>
+<div id="out" hidden>
+  <p>Copy this command and send it to the AVF Discord bot to finish connecting:</p>
+  <span id="cmd" class="code"></span>
+  <button id="copy" type="button">Copy</button>
+  <p class="muted"><small>The code works once, for a few minutes, and only together with the tool's secret key.
+  Nothing is sent from this page; it only shows the code TikTok put in the address bar.</small></p>
+</div>
+<script>
+  const q = new URLSearchParams(location.search);
+  const code = q.get("code"), state = q.get("state"), err = q.get("error");
+  const msg = document.getElementById("msg");
+  if (err) {
+    msg.textContent = "TikTok did not sign in: " + err + (q.get("error_description") ? " - " + q.get("error_description") : "");
+  } else if (code) {
+    msg.textContent = "Signed in. Đăng nhập thành công.";
+    document.getElementById("cmd").textContent = "/tiktok_code code:" + code + " state:" + (state || "");
+    document.getElementById("out").hidden = false;
+    document.getElementById("copy").onclick = () => navigator.clipboard.writeText(document.getElementById("cmd").textContent)
+      .then(() => { document.getElementById("copy").textContent = "Copied"; });
+  } else {
+    msg.textContent = "No sign-in code in the address. Start again from Discord with /tiktok_login.";
+  }
+</script>
+</main>
+</body>
+</html>
