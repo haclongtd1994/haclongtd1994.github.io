@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ToneCast - Support</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #6e6e73; --line: #d2d2d7; --link: #0066cc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000000; --fg: #f5f5f7; --muted: #a1a1a6; --line: #424245; --link: #2997ff; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9em; line-height: 1.2; margin: 0.4em 0; }
+  h2 { font-size: 1.3em; margin-top: 2em; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  .muted, .lang { color: var(--muted); }
+  .lang { font-size: 0.9em; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3em 0; }
+  li { margin: 0.35em 0; }
+  .short { border-left: 3px solid var(--line); padding-left: 14px; }
+</style>
+</head>
+<body>
+<main>
+<p class="lang"><a href="#en">English</a> · <a href="#vi">Tiếng Việt</a></p>
+
+<section id="en" lang="en">
+<h1>ToneCast - Support</h1>
+<p>ToneCast has two modes on your iPhone or iPad. <strong>Edit photos</strong> works on photos from any camera or phone: looks, light and colour, crop, and on-device AI retouch (auto beauty, even skin tone, spot healing, erasing people or objects). <strong>Control a Nikon Z</strong> connects to Nikon Z-series cameras over Wi-Fi or a USB cable: live view, exposure settings, shooting, writing Picture Control presets into the camera's Custom slots, and developing each new photo on your device. All editing runs on the device; no photo is uploaded.</p>
+<p><strong>Contact:</strong> <a href="mailto:henry.embedded.dev@gmail.com">henry.embedded.dev@gmail.com</a> - we usually reply within 2 business days. Please include your iPhone/iPad model, iOS/iPadOS version, camera model and firmware version, and what you were doing when the problem happened (••• › Log › Copy all, then paste it in your e-mail, helps a lot).</p>
+<h2>Getting started</h2>
+<p><strong>Editing photos:</strong> on the first screen tap <strong>Edit photos</strong> and pick photos from your library (no permission needed). Choose a look or tap <strong>Auto</strong>, then fine-tune in Adjust, Crop, Skin and Erase. Saving to Photos asks once for permission to <em>add</em> photos.</p>
+<p><strong>Connecting a camera:</strong></p>
+<ol>
+  <li><strong>On the camera:</strong> Network menu &gt; Connect to smart device &gt; turn on Wi-Fi.</li>
+  <li><strong>On the iPhone/iPad:</strong> Settings &gt; Wi-Fi &gt; join the camera's network.</li>
+  <li><strong>In the app:</strong> pick the camera from the list (or type its IP address, usually 192.168.1.1) and tap Connect. Confirm the pairing on the camera the first time.</li>
+</ol>
+<p>No camera at hand? Tap <strong>"Try Demo mode"</strong> on the first screen.</p>
+<h2>FAQ</h2>
+<p><strong>The app can't find my camera.</strong><br>
+Check Settings &gt; ToneCast &gt; Local Network is on, and that the iPhone is joined to the camera's Wi-Fi (not your home Wi-Fi). Then type the IP address manually.</p>
+<p><strong>Which cameras are supported?</strong><br>
+Nikon Z cameras: Z9, Z8, Z7II, Z7, Z6III, Z6II, Z6, Zf, Zfc, Z5II, Z5IIc, Z5, Z50II, Z50, Z30 and ZR, over Wi-Fi or a USB cable. Tested on: Nikon Z5II (firmware 1.20). Some features differ by model (for example the newest Picture Controls exist only on recent bodies); please tell us how it goes, with the log from ••• (More) › Log.</p>
+<p><strong>How do I connect with a USB cable?</strong><br>
+On the camera set Network menu › USB to <strong>MTP/PTP</strong> (not "iPhone", which is only for Nikon's own app), then plug the camera into the iPhone or iPad with a USB-C cable. The app connects by itself and asks once for permission to control the camera. While it is connected, the camera's dials and buttons may be locked; they come back when you disconnect or unplug.</p>
+<p><strong>What does "Develop new photos" do?</strong><br>
+Turn it on in ••• (More) and pick the look under "Preset for new photos". Each photo you take - with the app or the camera's own shutter - is downloaded (RAW when the camera records it), developed on the device with that preset plus deep colour / skin smoothing as you chose, and shown for review. Untouched, it is saved to Photos after a few seconds (with the RAW attached); touch the screen to choose another look first, or Discard.</p>
+<p><strong>It says the RAW file can't be decoded.</strong><br>
+Some iOS versions only read the Z5II's <em>Lossless compressed</em> NEFs. Tap "Switch the camera to lossless RAW" in the review, or set Photo shooting menu &gt; NEF (RAW) recording &gt; Lossless compressed. Meanwhile the camera's JPEG is used.</p>
+<p><strong>Developed photos aren't saved.</strong><br>
+Allow Settings &gt; ToneCast &gt; Photos &gt; "Add Photos Only".</p>
+<p><strong>Colours on the phone differ from the camera.</strong><br>
+Try ••• › Develop new photos › Calibrate camera colours (camera on a tripod; it takes one RAW + JPEG per Picture Control and puts your settings back afterwards).</p>
+<p><strong>Is writing a preset safe?</strong><br>
+Writing replaces the chosen Custom slot. Use <strong>Backup</strong> first to save your current slots to the Files app.</p>
+<p><strong>Where are my backups, imported presets and photos?</strong><br>
+Files app &gt; On My iPhone (or iPad) &gt; ToneCast.</p>
+<p><strong>How do I remove ads?</strong><br>
+Subscribe to Pro (yearly: US$29 in the US; the app shows the price in your currency). Pro removes all ads, unlocks the AI assistant (composition tips and preset suggestions over live view) and Colour by AI (photos imported from the camera's card are colour-graded on the device), and shares before/after cards without the "Edited with ToneCast" line. Everything else - the whole photo editor and AI styles included - is free (AI styles show an ad when turned on).</p>
+<p><strong>I bought Pro but still see ads / changed iPhone.</strong><br>
+Open the Pro screen and tap <strong>Restore purchases</strong>, signed in with the same Apple ID.</p>
+<p><strong>How do I cancel Pro?</strong><br>
+iOS Settings &gt; [your name] &gt; Subscriptions &gt; ToneCast &gt; Cancel Subscription. Refunds are handled by Apple: <a href="https://reportaproblem.apple.com">https://reportaproblem.apple.com</a></p>
+<p><strong>Privacy and terms</strong><br>
+See the <a href="https://haclongtd1994.github.io/tonecast/privacy.html">Privacy Policy</a>. Pro is sold under Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard End User License Agreement</a>.</p>
+<p class="muted"><em>Nikon and Nikon Z are trademarks of Nikon Corporation. ToneCast is an independent app and is not affiliated with, endorsed or sponsored by Nikon Corporation.</em></p>
+</section>
+
+<hr>
+
+<section id="vi" lang="vi">
+<h1>Hỗ trợ (Tiếng Việt)</h1>
+<p><strong>Liên hệ:</strong> <a href="mailto:henry.embedded.dev@gmail.com">henry.embedded.dev@gmail.com</a> - phản hồi trong khoảng 2 ngày làm việc. Vui lòng gửi kèm đời iPhone, phiên bản iOS, đời máy ảnh + firmware và mô tả lỗi.</p>
+<ul>
+  <li><strong>Chỉnh ảnh:</strong> ở màn hình đầu chọn <strong>Chỉnh ảnh</strong> rồi chọn ảnh trong thư viện (không cần cấp quyền); chọn look hoặc bấm <strong>Tự động</strong>, rồi chỉnh thêm ở Chỉnh, Cắt, Da và Xoá. Mọi thao tác chạy trên máy, không tải ảnh lên. Lưu vào Ảnh sẽ hỏi quyền <em>thêm ảnh</em> một lần.</li>
+  <li><strong>Kết nối:</strong> trên máy ảnh bật Menu Mạng › Kết nối với thiết bị thông minh › Wi-Fi; trên iPhone/iPad vào Cài đặt › Wi-Fi chọn mạng của máy ảnh; mở app, chọn máy ảnh hoặc nhập IP (thường 192.168.1.1) rồi bấm Kết nối.</li>
+  <li><strong>Máy ảnh tương thích:</strong> Nikon Z: Z9, Z8, Z7II, Z7, Z6III, Z6II, Z6, Zf, Zfc, Z5II, Z5IIc, Z5, Z50II, Z50, Z30 và ZR, qua Wi-Fi hoặc cáp USB; đã thử với Nikon Z5II (firmware 1.20). Một số tính năng khác nhau theo dòng máy.</li>
+  <li><strong>Kết nối bằng cáp USB:</strong> trên máy ảnh đặt Menu Mạng › USB thành <strong>MTP/PTP</strong> (không chọn "iPhone"), rồi cắm cáp USB-C vào iPhone/iPad; app tự kết nối và hỏi quyền điều khiển máy ảnh một lần. Khi đang kết nối, các nút trên máy có thể bị khoá; rút cáp hoặc ngắt kết nối là dùng lại được.</li>
+  <li><strong>Tự xử lý ảnh vừa chụp:</strong> bật trong ••• (Thêm) và chọn look ở "Preset cho ảnh mới"; ảnh được tải về, xử lý trên máy với preset đó, xem lại rồi tự lưu vào Ảnh kèm RAW. Nếu báo không đọc được RAW, hãy đặt NEF (RAW) là <em>Lossless compressed</em>. Nếu không lưu được ảnh: Cài đặt › ToneCast › Ảnh › "Chỉ thêm ảnh".</li>
+  <li><strong>Không tìm thấy máy ảnh:</strong> bật Cài đặt › ToneCast › Mạng cục bộ.</li>
+  <li><strong>Ghi preset:</strong> sẽ ghi đè slot Custom đã chọn - hãy Sao lưu trước.</li>
+  <li><strong>Bỏ quảng cáo:</strong> đăng ký Pro (theo năm: 29 USD tại Mỹ; app hiện giá theo đơn vị tiền tệ của bạn): không quảng cáo, mở trợ lý AI và Màu bằng AI khi nhập ảnh từ thẻ, thẻ trước/sau không kèm dòng "Chỉnh bằng ToneCast". Toàn bộ trình chỉnh ảnh vẫn miễn phí. Đổi máy/mất Pro: bấm "Khôi phục giao dịch".</li>
+  <li><strong>Huỷ Pro:</strong> Cài đặt › [tên bạn] › Đăng ký › ToneCast › Huỷ.</li>
+  <li><strong>Quyền riêng tư:</strong> xem <a href="https://haclongtd1994.github.io/tonecast/privacy.html#vi">Chính sách quyền riêng tư</a>.</li>
+</ul>
+</section>
+</main>
+</body>
+</html>
